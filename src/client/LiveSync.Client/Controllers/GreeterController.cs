@@ -18,7 +18,7 @@ public class GreeterController : ControllerBase
     }
     
     [HttpPost]
-    public async Task<IActionResult> Greet(string name)
+    public  IActionResult Greet(string name)
     {
         var client = new Greeter.GreeterClient(channel);
         
