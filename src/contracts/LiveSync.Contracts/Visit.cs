@@ -1,6 +1,71 @@
 ﻿namespace LiveSync.Contracts;
 
-public class Visit
+public interface Visit
 {
-    
+        string PatientID { get; set; }
+        string FacilityName { get; set; }
+        string SiteCode { get; set; }
+        string PatientPK { get; set; }
+        string VisitID { get; set; }
+        DateTime? VisitDate { get; set; }
+        string SERVICE { get; set; }
+        string VisitType { get; set; }
+        string WHOStage { get; set; }
+        string WABStage { get; set; }
+        string Pregnant { get; set; }
+        string LMP { get; set; }
+        string EDD { get; set; }
+        string Height { get; set; }
+        string Weight { get; set; }
+        string BP { get; set; }
+        string OI { get; set; }
+        DateTime? OIDate { get; set; }
+        string Adherence { get; set; }
+        string AdherenceCategory { get; set; }
+        string FamilyPlanningMethod { get; set; }
+        string PwP { get; set; }
+        string GestationAge { get; set; }
+        DateTime? NextAppointmentDate { get; set; }
+        string SubstitutionFirstlineReg { get; set; }
+        string SubstitutionFirstLineRegReason { get; set; }
+        string SubstitutionSecondLineReg { get; set; }
+        string SubstitutionSecondLineRegReason { get; set; }
+        string SecondLineRegChange { get; set; }
+        string SecondLineRegChangeReason { get; set; }
+        string Emr { get; set; }
+        string Project { get; set; }
+        int Ident { get; set; }
+        string PKV { get; set; }
+        string DifferentiatedCare { get; set; }
+        string StabilityAssessment { get; set; }
+        string KeyPopulationType { get; set; }
+        string PopulationType { get; set; }
+        string VisitBy { get; set; }
+        string Temp { get; set; }
+        string PulseRate { get; set; }
+        int? RespiratoryRate { get; set; }
+        int? OxygenSaturation { get; set; }
+        int? Muac { get; set; }
+        string NutritionalStatus { get; set; }
+        string EverHadMenses { get; set; }
+        string Breastfeeding { get; set; }
+        string Menopausal { get; set; }
+        string NoFPReason { get; set; }
+        string ProphylaxisUsed { get; set; }
+        string CTXAdherence { get; set; }
+        string CurrentRegimen { get; set; }
+        string HCWConcern { get; set; }
+        string TCAReason { get; set; }
+        string ClinicalNotes { get; set; }
+        string GeneralExamination { get; set; }
+        string SystemExamination { get; set; }
+        string Skin { get; set; }
+        string Eyes { get; set; }
+        string ENT { get; set; }
+        string Chest { get; set; }
+        string CVS { get; set; }
+        string Abdomen { get; set; }
+        string CNS { get; set; }
+        string Genitourinary { get; set; }
+        
 }

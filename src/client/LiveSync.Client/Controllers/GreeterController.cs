@@ -1,6 +1,7 @@
 using Grpc.Net.Client;
 using Microsoft.AspNetCore.Mvc;
 using GrpcLiveSyncClient;
+using Microsoft.Extensions.Logging;
 
 namespace LiveSync.Client.Controllers;
 

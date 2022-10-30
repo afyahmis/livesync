@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using LiveSync.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LiveSync.Central.Legacy.Controllers;
@@ -6,9 +8,9 @@ namespace LiveSync.Central.Legacy.Controllers;
 [Route("[controller]")]
 public class VisitController : ControllerBase
 {
-    // GET
-    public IActionResult Index(int? siteCode)
+    [HttpPost]
+    public IActionResult Index(List<Visit> visits)
     {
-        return Ok(100);
+        return Ok(visits.Count);
     }
 }
